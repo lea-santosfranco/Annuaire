@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les objets</title>
+</head>
+<body>
+
+    <script>
+        
+        var phoneNumber = {
+            Patricia : "06 66 66 66 66",
+            David : "07 77 77 77 77",
+        } 
+        let fonctionnalite = ""
+        while (fonctionnalite !== "q"){
+             fonctionnalite = prompt("Quelle fonctionnalité souhaitez-vous utiliser ? q/r/l/a/s")
+            if (fonctionnalite === "r"){
+                 userRequest = prompt("Saisir le nom de l'utilisateur recherché :");
+                alert(phoneNumber[userRequest] + userRequest);
+                
+            }
+            else if (fonctionnalite === "l"){
+                for (userRequest in phoneNumber){
+                    console.log(phoneNumber[userRequest]+ userRequest);
+            }
+            }  
+            else if (fonctionnalite === "a"){
+                let namePerson = prompt("Quel est le nom ?");
+                let addNumber = prompt("Quel numéro voulez-vous ajouter ?");
+                phoneNumber[namePerson] = addNumber;
+                
+            }
+            else {
+                delete phoneNumber.Patricia
+            }
+            }
+    </script>
+    
+</body>
+</html>
