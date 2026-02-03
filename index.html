@@ -6,8 +6,7 @@
     <title>Les objets</title>
 </head>
 <body>
-
-    <script>
+<!--      <script>
         
         var phoneNumber = {
             Patricia : "06 66 66 66 66",
@@ -33,10 +32,28 @@
                 
             }
             else {
+                let nomASupprimer = prompt("Entrez le nom du contact à supprimer : ")
                 delete phoneNumber.Patricia
             }
             }
+    </script>-->
+
+    <script>
+        class Etudiant {
+            constructor(age, nom, sexe){
+                this.age = age;
+                this.nom = nom;
+                this.sexe = sexe;
+                alert("Etudiant instancié.");
+            }
+            }
+        let etudiant1 = new Etudiant ("36", "Pedro", "Homme");
+        let etudiant2 = new Etudiant ("21", "Jose", "Homme");
+       alert(etudiant1.age + " " + etudiant1.nom + " " + etudiant1.sexe);
+    
     </script>
+
+
     
 </body>
 </html>
